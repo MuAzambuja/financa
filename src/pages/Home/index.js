@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import Balance from '../../components/balance';
 import Movements from '../../components/Movements';
 import Actions from '../../components/Actions';
+import { Routes } from '../../routes'
 
 const list = [
     {
@@ -31,6 +32,7 @@ const list = [
 
 export default function Home() {
     return (
+
         <View style={styles.container}>
             <Header name="Murilo Azambuja" />
             <Balance saldo="9.250,37" gastos="-527,88" />

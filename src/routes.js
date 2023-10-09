@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
+import Login from './pages/Login'
 import Home from './pages/Home'
 import Money from './pages/Money'
 import Store from './pages/Store'
@@ -10,6 +11,8 @@ const Tab = createBottomTabNavigator();
 
 export function Routes() {
     return (
+
+
         <Tab.Navigator
             screenOptions={{
                 headerShown: false,
@@ -24,6 +27,13 @@ export function Routes() {
             }}
             tabBar={(props) => <CustomTabBar {...props} />}
         >
+            <Tab.Screen
+                name="Login"
+                component={Login}
+                options={{
+                    tabBarIcon: "compare-arrows"
+                }}
+            />
             <Tab.Screen
                 name="Home"
                 component={Home}
