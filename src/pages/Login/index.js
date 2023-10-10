@@ -1,9 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, Platform } from 'react-native';
+import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, Platform, Link } from 'react-native';
 import { Rotas } from '../Rotas/index'
-import { Home } from '../Home/index'
-
-import { useNavigation, useFocusEffect } from '@react-navigation/native';
 
 export default function Login() {
     return (
